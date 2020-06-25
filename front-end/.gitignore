@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+TODO.MD
+
+.DS_Store
+Thumbs.db
+
+yarn-error.log

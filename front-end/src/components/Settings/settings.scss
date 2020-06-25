@@ -1,0 +1,72 @@
+@import 'src/styles/vars';
+
+.settings {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  padding: 0.5rem;
+  display: grid;
+  form {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color: $colLightGrey;
+    border-radius: 0.25rem;
+  }
+  &-button--open {
+    i {
+      transition: all ease 0.15s!important;
+      transform: rotate(45deg)!important;
+    }
+  }
+  &.not-connected {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.settings.not-connected {
+  display: contents;
+  .ui.icon.button {
+    display: none;
+  }
+  
+  form {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+
+.settings-button-open {
+  i {
+    transition: all ease 0.15s!important;
+    transform: rotate(45deg)!important;
+  }
+}
+
+.avatars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.25rem 0.25rem;
+  grid-template-areas: ". ." ". ." ". ." ". ." ". .";
+  margin: 0.5rem 0;
+  .avatar {
+    display: grid;
+    width: 4rem;
+    padding: 0.25rem;
+    box-sizing: content-box;
+    cursor: pointer;
+    --is-selected {
+      opacity: 1;
+    }
+    &:not(:hover, .avatar--is-selected) {
+      opacity: 0.5;
+    }
+  }
+}

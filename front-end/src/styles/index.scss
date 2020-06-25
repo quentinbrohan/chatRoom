@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'vars';
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $colGrey!important;
+}

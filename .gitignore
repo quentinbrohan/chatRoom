@@ -1,0 +1,7 @@
+back-end/node_modules/
+front-end/node_modules/
+
+.DS_Store
+Thumbs.db
+
+yarn-error.log

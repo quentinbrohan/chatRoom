@@ -1,0 +1,62 @@
+@import 'src/styles/vars';
+
+.app {
+  // box-sizing: content-box;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 700px;
+  height: 100vh;
+  background-color: $colWhite!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat {
+  overflow: auto;
+}
+
+.ui .input {
+  width: 100%;
+}
+
+.ui .comments {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: content-box;
+}
+
+.ui.comments {
+  max-width: none;
+}
+
+.ui.comments .comment .avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+.ui.comments .comment .metadata {
+  margin-left: 0;
+}
+
+.ui.comments .comment .content {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message .comment .avatar {
+  margin-right: 1rem!important;
+}
+
+
+.message--own {
+  text-align: right;
+  .comment {
+    display: flex;
+    flex-direction: row-reverse;
+    .avatar {
+      margin-left: 1rem!important;
+    }
+  }
+}
