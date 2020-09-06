@@ -1,8 +1,8 @@
 # ChatRoom
 
-Salle de chat en temps réel.
+Live chatroom built with React and Redux, running on a Node back-end.
 
-Connexion, envoi et réception messages avec date/heure/avatar utilisateur, possiblité de changer d'avatar.
+Send and receive messages, including time and avatar or user. You can also set your avatar between one of the predefined.
 
 Front: React, Redux, Axios, Semantic UI.
 
@@ -10,7 +10,7 @@ Back: Node.js, Express.js, Socket.io.
 
 ![](chatroom.png)
 
-## Lancement
+## Start
 
 Front:
 ```
@@ -24,7 +24,7 @@ yarn
 yarn start
 ```
 
-## Connexion
+## Login
 
 Mail / Password
 ```
